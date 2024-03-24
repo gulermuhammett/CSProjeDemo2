@@ -7,13 +7,13 @@ class Program
     static void Main(string[] args)
     {
         // Example JSON file path
-        string filePath = "C:\\Users\\cgr_g\\Desktop\\C#\\CSProjeDemo2\\CSProjeDemo2\\employees.json";
+        string filePath = "C:\\Users\\muham\\Desktop\\Muhammet-Guler\\ConsolBordroHesaplama\\CSProjeDemo2\\employees.json";
 
         // Read employee list from JSON file
         List<Manager> managers = FileReader.ReadManagerList(filePath);
         List<Clerk> clerks = FileReader.ReadClerkList(filePath);
 
-        Console.Write("Press 1 to list managers or press 2 to list clerks: ");
+        Console.Write("Yöneticileri listelemek için 1'e, katipleri listelemek için 2'ye basın: ");
         int choice = int.Parse(Console.ReadLine());
 
         if (choice == 1)
@@ -28,7 +28,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Wrong number!");
+            Console.WriteLine("Yanlış numara!");
             Console.ReadLine();
         }
 
